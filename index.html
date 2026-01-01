@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生日快乐 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #ff5e78;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+}
+
+.photo {
+  margin: 20px 0;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999;
+}
+
+.balloons {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+  </style>
+  <audio id="bgm" src="laicai.mp3" autoplay loop></audio>
+</head>
+<body onclick="document.getElementById('bgm').play()">
+  <div class="card">
+    <div class="photo">
+      <!-- 把 photo1.jpg、photo2.jpg 等换成你的照片文件名 -->
+      <img src="photo1.jpg" alt="生日照片" />
+    </div>
+  </div>
+</body>
+</html>
