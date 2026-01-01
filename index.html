@@ -2,24 +2,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sb</title>
+  <title>sbjx 🎉😂</title>
   <style>
     body {
       margin: 0;
-      font-family: "Arial", sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: "Comic Sans MS", sans-serif;
+      background: linear-gradient(135deg, #fffa65, #ff6ec7, #6ec1ff);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }.card {
-  background: white;
+  background: #fff8dc;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   padding: 20px;
   max-width: 400px;
   width: 90%;
   text-align: center;
+  animation: shake 1s infinite;
 }
 
 .photo {
@@ -31,6 +33,21 @@
   border-radius: 15px;
   object-fit: cover;
   margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
   </style>
@@ -38,8 +55,8 @@
 <body>
   <div class="card">
     <div class="photo">
-      <img src="IMG-20260101-WA0141.jpg" alt="生日照片1" />
-      <img src="IMG-20260101-WA0140.jpg" alt="生日照片2" />
+      <img src="IMG-20260101-WA0140.jpg" alt="搞笑照片1" />
+      <img src="IMG-20260101-WA0141.jpg" alt="搞笑照片2" />
     </div>
   </div>
 </body>
